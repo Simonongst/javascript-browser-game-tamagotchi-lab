@@ -27,8 +27,16 @@ function init(){
 init();
 
 function runGame(){
-    console.log('the game is running!');
+    updateStates();
+    render();
 };
+
+
+function render(){
+
+};
+
+
 
 /*----------------------------- Event Listeners -----------------------------*/
 
