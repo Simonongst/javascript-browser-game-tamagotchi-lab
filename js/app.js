@@ -10,8 +10,14 @@ let timer;
 let gameOver;
 
 /*------------------------ Cached Element References ------------------------*/
-
-
+const boredomStatEl = document.getElementById('boredom-stat');
+const hungerStatEl = document.getElementById('hunger-stat');
+const sleepinessStatEl = document.getElementById('sleepiness-stat');
+const playBtnEl = document.getElementById('play');
+const feedBtnEl = document.getElementById('feed');
+const sleepBtnEl = document.getElementById('sleep');
+const gameMessageEl = document.getElementById('message');
+const resetBtnEl = document.getElementById('restart');
 
 /*-------------------------------- Functions --------------------------------*/
 
