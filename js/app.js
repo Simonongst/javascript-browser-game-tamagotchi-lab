@@ -43,13 +43,7 @@ const updateStates = () => {
 };
 
 const checkGameOver = () => {
-    if(state.boredom >= 10){
-        gameOver = true;
-    };
-    if(state.hunger >= 10){
-        gameOver = true;
-    };
-    if(state.sleepiness >= 10){
+    if(state.boredom > 9 || state.hunger > 9 || state.sleepiness > 9){
         gameOver = true;
     };
 };
@@ -76,7 +70,14 @@ const runGame = () => {
 };
 
 const init = () => {
+    resetBtnEl.classList.add('hidden');
+    gameMessageEl.classList.add('hidden');
+    state.boredom = 0;
+    state.hunger = 0;
+    state.sleepiness = 0;
     timer = setInterval(runGame, 2000);
+    gameOver = false;
+    render();
 };
 
 init();
@@ -85,3 +86,4 @@ init();
 playBtnEl.addEventListener('click', playBtnClick);
 feedBtnEl.addEventListener('click', feedBtnClick);
 sleepBtnEl.addEventListener('click', sleepBtnClick);
+resetBtnEl.addEventListener('click', init);
