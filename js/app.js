@@ -20,8 +20,11 @@ const gameMessageEl = document.getElementById('message');
 const resetBtnEl = document.getElementById('restart');
 
 /*-------------------------------- Functions --------------------------------*/
+function init(){
+    
+}
 
-
+init();
 
 /*----------------------------- Event Listeners -----------------------------*/
 
