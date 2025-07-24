@@ -7,7 +7,7 @@ let boredom = 0;
 let hunger = 0;
 let sleepiness = 0;
 let timer;
-let gameOver;
+let gameOver = false;
 
 /*------------------------ Cached Element References ------------------------*/
 const boredomStatEl = document.getElementById('boredom-stat');
