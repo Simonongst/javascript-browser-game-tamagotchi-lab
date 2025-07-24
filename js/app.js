@@ -21,10 +21,14 @@ const resetBtnEl = document.getElementById('restart');
 
 /*-------------------------------- Functions --------------------------------*/
 function init(){
-    
-}
+    timer = setInterval(runGame(), 2000);
+};
 
 init();
+
+function runGame(){
+    console.log('the game is running!');
+};
 
 /*----------------------------- Event Listeners -----------------------------*/
 
