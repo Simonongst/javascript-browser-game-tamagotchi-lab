@@ -29,7 +29,7 @@ const render = () => {
     hungerStatEl.textContent = state.hunger;
     sleepinessStatEl.textContent = state.sleepiness;
 
-    if(gameOver === true){
+    if(gameOver){
         clearInterval(timer);
         resetBtnEl.classList.remove("hidden");
         gameMessageEl.classList.remove("hidden");
