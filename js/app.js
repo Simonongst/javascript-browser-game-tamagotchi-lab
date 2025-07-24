@@ -36,7 +36,11 @@ function render(){
 
 };
 
-
+function updateStates(){
+    boredom = Math.ceil(Math.random(boredom) * 3);
+    hunger = Math.ceil(Math.random(hunger) * 3);
+    sleepiness = Math.ceil(Math.random(sleepiness) * 3);
+};
 
 /*----------------------------- Event Listeners -----------------------------*/
 
